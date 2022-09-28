@@ -1,0 +1,30 @@
+body {
+  margin: 30px;
+}
+#firstNumber {
+  margin-top: 5%;
+}
+#secondNumber {
+  margin-top: 25px;
+}
+/* add button */
+#btn {
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+/* divide button */
+#btn2 {
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+ /* calculate button */
+#btn3 {
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}

@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
+
 <body>
-    <form id="calculation" >
+    <form>
+        1st Number : <input type="number" id="firstNumber" /><br>
+        <p id="symbol"></p>
+        2nd Number: <input type="number" id="secondNumber" /><br>
+        <input type="button" id="btn" onclick="addBy()" value="Add" />
+        <input type="button" id="btn2" onclick="divideBy()" value="Divide" />
+        <input type="button" id="btn3" onclick="calculate()" value="Calculate" />
+    </form>
 
-    <input type="text" id="box1" value="4">
-    <input type="text" id="box" value="+">
-    <input type="text" id="box2" value="10">
-
-   </form>
-
-    <p>Click to change the value</p>
-    
-
-<button onclick="">HitMe</button>
+ 
+    <p>The Result is : <br>
+        <span id="result"></span>
+    </p>
 
 
 
 
-    <script src="myscripts.js"></script> 
+
+
+
+    <script src="script.js"></script>
 </body>
+
 </html>
