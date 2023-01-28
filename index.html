@@ -5,32 +5,110 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 
 <body>
-    <form>
-        1st Number : <input type="number" id="firstNumber" /><br>
-        <p id="symbol"></p>
-        2nd Number: <input type="number" id="secondNumber" /><br>
-        <input type="button" id="btn" onclick="addBy()" value="Add" />
-        <input type="button" id="btn2" onclick="divideBy()" value="Divide" />
-        <input type="button" id="btn3" onclick="calculate()" value="Calculate" />
-    </form>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About me</a>
+        <a href="#">Link</a>
+        <a href="#">Newsletter</a>
+    </div>
+    <!-- Header -->
+    <div class="header">
+        <div class="title">
+            <h1>Moira Corradini</h1>
+            <p>| Front-End Developer | <b>Artist |</b> Gym Addict |</p>
+        </div>
+    </div>
 
+    <!-- The flexible grid (content) -->
+    <div class="row">
+
+        <div class="about parent">
+
+            <div id="img-div">
+                <!-- https://via.placeholder.com/300x380 -->
+                <img id="image" src="./image/moviavatarsmall.jpeg" alt="Avatar">
+            </div>
+
+            <div class="description-about child2">
+
+                <div id="about-me">
+                    <h2>About Me</h2>
+
+                    <p>Welcome to my new website, where I will be sharing my thoughts and experiences on various aspects
+                        of
+                        life.
+                        from my new career in coding to my love for art and fitness.
+                        I will be sharing my insights and tips on how to live a fulfilling and balanced life.</p>
+
+                    <p>I am a junior developer with a passion for creating user-friendly and engaging experiences
+                        through
+                        front-end web development.My skills include HTML, CSS, JavaScript, React, Bootstrap, SQL,
+                        and
+                        Git version control. I am always eager to learn and improve my skills.</p>
+                    <p> In addition to my passion for web development, I also have a love for fitness and wellness.
+                        I enjoy weightlifting and practicing yoga to stay physically and mentally healthy. I believe
+                        that
+                        having a healthy balance between work and personal life
+                        is important for success.</p>
+                    <p>I have also gained experience in various other fields such as freelancing as a software
+                        developer,
+                        caregiving for my children, working as a barista, dental assistant, and set designer. I am
+                        fluent in
+                        English and Italian, and I have completed
+                        a number of online courses and bootcamps to enhance my abilities.</p>
+
+                    <p> One of the best ways to stay up to date with my latest posts and updates is by subscribing to my
+                        newsletter</p>
+                </div>
+            </div>
+
+
+            <!-- <h3>Truth or Lie</h3>
+            <p>Lorem ipsum dolor sit ame.</p> -->
+
+        </div>
+
+        <div class="news-letter parent">
+
+            <div class="container1 child3">
+                <h2>Subscribe to my Newsletter</h2>
+                <p>So, if you are interested in learning more about my experiences and insights on life, coding,
+                    art, and fitness,
+                    <br> make sure to subscribe to my newsletter and stay up to date with my latest posts and
+                    updates.
+                    <br> I look forward to connecting with you and sharing my journey with you.
+                </p>
+            </div>
+
+            <div class="container2 child4" style="background-color:white">
+                <form action="action_page.php">
+                    <input type="text" placeholder="Name" name="name" required>
+                    <input type="text" placeholder="Email address" name="mail" required>
+
+                    <input type="submit" value="Subscribe">
+                </form>
+            </div>
+
+            <!-- <div class="container"> -->
+            <!-- <input type="submit" value="Subscribe"> -->
+            <!-- </div> -->
+
+        </div>
+        <!-- Footer -->
+        <div class="footer">
  
-    <p>The Result is : <br>
-        <span id="result"></span>
-    </p>
+        </div>
 
-
-
-
-
-
-
-    <script src="script.js"></script>
+    </div>
+    <script src="myscripts.js"></script>
 </body>
 
 </html>

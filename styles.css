@@ -1,30 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Alexandria&family=Exo:wght@500&family=Kumbh+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya&family=Alexandria&family=Exo:wght@500&family=Kumbh+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya&family=Alexandria&family=Exo:wght@500&family=Kumbh+Sans:wght@700&family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya&family=Alexandria&family=Exo:wght@500&family=Kumbh+Sans:wght@700&family=Montserrat+Alternates:wght@600&family=Roboto+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
-  margin: 30px;
+  font-family: "Alegreya", serif;
 }
-#firstNumber {
-  margin-top: 5%;
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #031426;
+  position: fixed;
+  width: 100%;
+  font-family: "Montserrat Alternates", monospace;
 }
-#secondNumber {
-  margin-top: 25px;
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+  text-align: center;
 }
-/* add button */
-#btn {
-    margin-top: 40px;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: center;
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #283747;
+  color: white;
 }
-/* divide button */
-#btn2 {
-    margin-top: 40px;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: center;
+
+/* Header/logo Title */
+.header {
+  padding: 0px;
+  text-align: center;
+  background: #283747;
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
- /* calculate button */
-#btn3 {
-    margin-top: 40px;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: center;
+.title {
+  width: 100%;
+  font-family: "Montserrat Alternates", sans-serif;
+  /* font-family: 'Alegreya', serif; */
+}
+/* 7vw: 7% of the viewport screen width */
+.title h1 {
+  font-size: 7vw;
+}
+
+/* 2vw: 2% of the viewport screen width */
+.title p {
+  font-size: 2vw;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.about {
+  height: 100vh;
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: row;
+}
+
+.description-about {
+  font-size: 1vw;
+  width: 50%;
+  color: #031426;
+  height: 100vh;
+  /* margin-top: 15%; */
+  text-align: justify;
+  /* padding-left: 50px;
+  padding-right: 50px; */
+  display: flex;
+  align-items: center;
+}
+#about-me {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.description-about h2 {
+  margin-bottom: 30px;
+}
+
+#img-div {
+  width: 50%;
+  height: 100vh;
+  background-color: white;
+  /* text-align: right; */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#image {
+  width: 70%;
+  max-width: 500px;
+}
+.row h2 {
+  text-align: center;
+  font-size: 50px;
+}
+.news-letter {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+/* Add some padding and a grey background color to containers */
+.container1 {
+  width: 50%;
+  height: 100vh;
+  background-color: green;
+  text-align: right;
+  color: white;
+}
+.container2 {
+  width: 50%;
+  color: green;
+  height: 100vh;
+}
+
+/* Style the input elements and the submit button */
+input[type="text"],
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Add margins to the checkbox */
+input[type="checkbox"] {
+  margin-top: 16px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  border: none;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .about {
+    flex-direction: column;
+  }
+  #img-div {
+    width: 100%;
+  }
+  .description-about {
+    width: 100%;
+  }
+  #about-me {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
