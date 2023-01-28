@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya&family=Alexandria&family=Exo:wght@500&family=Kumbh+Sans:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alegreya&family=Alexandria&family=Exo:wght@500&family=Kumbh+Sans:wght@700&family=Roboto+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alegreya&family=Alexandria&family=Exo:wght@500&family=Kumbh+Sans:wght@700&family=Montserrat+Alternates:wght@600&family=Roboto+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Alexandria&family=Exo+2&family=Exo:wght@500&family=Kumbh+Sans:wght@700&family=Montserrat+Alternates:wght@600&family=Roboto+Mono&family=Roboto:wght@700;900&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -82,10 +83,7 @@ body {
   width: 50%;
   color: #031426;
   height: 100vh;
-  /* margin-top: 15%; */
   text-align: justify;
-  /* padding-left: 50px;
-  padding-right: 50px; */
   display: flex;
   align-items: center;
 }
@@ -102,7 +100,6 @@ body {
   width: 50%;
   height: 100vh;
   background-color: white;
-  /* text-align: right; */
   color: white;
   display: flex;
   justify-content: center;
@@ -112,10 +109,25 @@ body {
   width: 70%;
   max-width: 500px;
 }
+
 .row h2 {
   text-align: center;
   font-size: 50px;
 }
+.truth {
+  font-style: oblique;
+  font-weight: 400;
+}
+
+#newsletter-text {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#newsletter-text h2 {
+padding: 30px;
+}
+
 .news-letter {
   width: 100%;
   height: 100vh;
@@ -126,44 +138,120 @@ body {
 
 /* Add some padding and a grey background color to containers */
 .container1 {
+  font-size: 1vw;
   width: 50%;
+  color: #031426;
+  background-color: #f1f1f1;
   height: 100vh;
-  background-color: green;
-  text-align: right;
-  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
 }
 .container2 {
+  font-size: 1vw;
   width: 50%;
-  color: green;
+  color: #031426;
+  background-color: #283747;
   height: 100vh;
+  text-align: center;
+  /* padding-left: 50px;
+  padding-right: 50px; */
+  /* display: flex;
+  align-items: center; */
 }
+
+.container2.child4 {
+  display: flex;
+  align-items: center; /* vertically align */
+  justify-content: center; /* horizontally align */
+}
+
 
 /* Style the input elements and the submit button */
 input[type="text"],
 input[type="submit"] {
-  width: 100%;
-  padding: 12px;
-  margin: 8px 0;
+  width: 70%;
+  padding: 20px;
+  margin: 10px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid #031426;
+  font-size: 15px;
   box-sizing: border-box;
-}
-
-/* Add margins to the checkbox */
-input[type="checkbox"] {
-  margin-top: 16px;
+  border-radius: 10px;
 }
 
 /* Style the submit button */
 input[type="submit"] {
-  background-color: #04aa6d;
+  background-color: #031426;
   color: white;
   border: none;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  font-size: 20px;
 }
 
 input[type="submit"]:hover {
   opacity: 0.8;
 }
+
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+
+  /* Style all font awesome icons */
+  .fa {
+    padding: 5px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 10px;
+  }
+  /* Instagram */
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  /*Github*/
+  .fa-github {
+    background: #070707;
+    color: white;
+  }
+
+  footer {
+    background-color: #031426;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+}
+
+.copyright {
+    font-size: 0.8rem;
+}
+
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
@@ -181,6 +269,6 @@ input[type="submit"]:hover {
   }
   #about-me {
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right:10px;
   }
 }
