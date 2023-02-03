@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Alexandria&family=Exo:wght@500&family=Kumbh+Sans:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Alegreya&family=Alexandria&family=Exo:wght@500&family=Kumbh+Sans:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Alegreya&family=Alexandria&family=Exo:wght@500&family=Kumbh+Sans:wght@700&family=Roboto+Mono&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Alegreya&family=Alexandria&family=Exo:wght@500&family=Kumbh+Sans:wght@700&family=Montserrat+Alternates:wght@600&family=Roboto+Mono&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Alexandria&family=Exo:wght@500&family=Kumbh+Sans:wght@700&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Alegreya&family=Alexandria&family=Exo:wght@500&family=Kumbh+Sans:wght@700&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Alegreya&family=Alexandria&family=Exo:wght@500&family=Kumbh+Sans:wght@700&family=Roboto+Mono&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Alegreya&family=Alexandria&family=Exo:wght@500&family=Kumbh+Sans:wght@700&family=Montserrat+Alternates:wght@600&family=Roboto+Mono&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Alexandria&family=Exo+2&family=Exo:wght@500&family=Kumbh+Sans:wght@700&family=Montserrat+Alternates:wght@600&family=Roboto+Mono&family=Roboto:wght@700;900&display=swap");
 * {
   margin: 0;
@@ -14,6 +14,7 @@ body {
 .topnav {
   overflow: hidden;
   background-color: #031426;
+  width: 100%;
   position: fixed;
   font-family: "Montserrat Alternates", monospace;
 }
@@ -75,6 +76,7 @@ body {
   display: flex;
   align-items: center;
 }
+
 .title {
   width: 100%;
   font-family: "Montserrat Alternates", sans-serif;
@@ -226,13 +228,18 @@ input[type="submit"]:hover {
 }
 
 .social-media {
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
   padding: 5px;
   width: 100%;
   position: absolute;
   bottom: 0;
+}
+
+.fa-setting {
+  padding: 5px;
+  margin: 10px;
 }
 
 /* Style all font awesome icons */
@@ -281,9 +288,10 @@ footer {
   font-size: 0.8rem;
 }
 
-
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a:not(:first-child) {
+    display: none;
+  }
   .topnav a.icon {
     float: right;
     display: block;
@@ -291,7 +299,9 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+  }
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
@@ -317,11 +327,9 @@ footer {
     width: 100%;
     height: 100%;
     padding: 20px;
-
   }
   .description-about {
     width: 100%;
-   
   }
   #about-me {
     padding-left: 10px;
@@ -342,23 +350,21 @@ footer {
   #newsletter-text h2 {
     font-size: 30px;
   }
-
 }
 
 @media screen and (max-width: 1000px) {
   .description-about {
     font-size: 13px;
-   
   }
- 
+
   #about-me p {
     padding: 15px;
   }
   #newsletter-text p {
     font-size: 15px;
-    
   }
-  .container2 input[type="text"], .container2 input[type="submit"] {
+  .container2 input[type="text"],
+  .container2 input[type="submit"] {
     font-size: 15px;
   }
   .container1 {
